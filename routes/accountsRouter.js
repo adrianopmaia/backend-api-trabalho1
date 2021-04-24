@@ -14,7 +14,7 @@ app.post('/accounts', async (req, res) => {
 });
 
 //RETRIEVE
-app.get('/accounts', async (req, res) => {
+app.get('herolu', async (req, res) => {
   try {
     const account = await accountsModel.find({});
     res.status(200).send(account);
