@@ -6,7 +6,7 @@ dotenv.config();
 //console.log(process.env.USER_DB);
 (async () => {
   try {
-    console.log('Conectando a MongoDB Atlas');
+    console.log('Conectando a MongoDB Atlas de novo');
     await mongoose.connect(
       `mongodb+srv://${process.env.USER_DB}:${process.env.USER_PASS}@cluster0.m9ih6.mongodb.net/bootcamp?retryWrites=true&w=majority`,
       {
