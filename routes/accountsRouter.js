@@ -24,6 +24,21 @@ app.get('/accounts', async (req, res) => {
   }
 });
 
+
+}
+});
+
+//RETRIEVE 10
+app.get('/accounts10', async (req, res) => {
+  try {
+    const account = await accountsModel.find({}).limit(10);
+    res.status(200).send(account);
+  } catch (error) {
+    console.log(error);
+    res.status(500).send(error);
+  }
+});
+
 //UPDATE
 app.patch('/accounts/:id', async (req, res) => {
   try {
