@@ -24,10 +24,6 @@ app.get('/accounts', async (req, res) => {
   }
 });
 
-
-}
-});
-
 //RETRIEVE 10
 app.get('/accounts10', async (req, res) => {
   try {
@@ -38,7 +34,6 @@ app.get('/accounts10', async (req, res) => {
     res.status(500).send(error);
   }
 });
-
 //UPDATE
 app.patch('/accounts/:id', async (req, res) => {
   try {
